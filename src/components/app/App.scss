@@ -1,0 +1,222 @@
+@import url('https://fonts.googleapis.com/css2?family=Abril+Fatface&family=Lato&display=swap');
+
+.App{
+  font-family: 'Lato', sans-serif;
+
+  .hero{
+    position:relative;
+    color:white;
+    height:100vh;
+
+    .hero-block{
+      position: absolute;
+      top: 50%;
+      left: 50%;
+      transform: translate(-50%, -50%);
+
+      h1{
+        font-family: 'Abril Fatface', cursive;
+      }
+
+      p{
+        font-size:2em;
+      }
+    }
+
+    &::before {
+      position: absolute;
+      top: 0;
+      right: 0;
+      bottom: 0;
+      left: 0;
+      content: '';
+
+      /* Any overlay color that you want, here I use black with 25% opacity */
+      background-color: rgba(0,0,0,0.25);
+    }
+
+    .hero-video{
+      object-fit:cover;
+      height:100vh;
+      width:100%;
+    }
+  }
+
+  .parallax-children{
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    display: flex;
+    flex-flow: row wrap;
+    align-items: center;
+    margin:auto;
+
+    h1 {
+        color: white;
+        font-size: 4vw;
+        font-weight: normal;
+    }
+  }
+
+  #contact{
+    .parallax-children{
+      &>div{
+        display:block;
+        height:350px;
+        width:40vw;
+        background-color: rgba(0,0,0,0.8);
+        color:white;
+
+        table{
+          background:unset;
+          tr, td{
+            border:unset;
+          }
+        }
+      }
+    }
+
+    .map{
+      height:50vh;
+    }
+  }
+
+  .current-nav{
+    border-bottom:2px solid white;
+  }
+
+  #menu{
+    padding-top:72px;
+
+    h2{
+      color:white;
+      font-weight:bold;
+    }
+
+    position:relative;
+    display:block;
+    background:linear-gradient( rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5) ),url(../../style/images/04.JPEG);
+    background-size:cover;
+    background-attachment: fixed;
+
+    .price{
+      font-size:0.75em;
+      vertical-align: middle;
+      display:inline-block;
+    }
+
+    .item{
+      word-break:normal;
+      display:inline-block;
+      width:calc(100% - 50px);
+    }
+
+    ul{
+      box-sizing:border-box;
+      width:100%;
+      display:flex;
+      -webkit-column-break-inside: avoid; /* Chrome, Safari */
+      page-break-inside: avoid;           /* Theoretically FF 20+ */
+      break-inside: avoid-column;         /* IE 11 */
+      color:white;
+    }
+
+    ul.list-group li{
+      background-color: rgba(0,0,0,0.8);
+      border-color:1px solid rgba(255, 255, 255, 0.125);
+    }
+
+    &>div>div{
+      -moz-column-count: 3;
+      -webkit-column-count: 3;
+      column-count: 3;
+    }
+
+    .filling-empty-space-childs {
+      display:block;
+      height:0; /*Important! for the divs to collapse should they fall in a new row*/
+    }
+  }
+
+  #about{
+    position:Relative;
+    min-height:40vh;
+    padding:8vh;
+
+    p{
+      margin:auto;
+    }
+  }
+
+  #deliveroo{
+    padding:8vh;
+    background:#00b8a9;
+    color:#440063;
+
+    h2{
+      font-weight:bold;
+    }
+
+    a{
+      color:white;
+    }
+  }
+
+  #menuSection{
+    color:white;
+
+    &>div>div>div{
+        padding:8vh;
+        background-color: rgba(0,0,0,0.8);
+        margin:auto;
+        text-align:center;
+        display:block;
+    }
+
+    h2{
+      font-weight:bold;
+    }
+  }
+
+  nav, footer, #about{
+    color:white;
+    background:#171717;
+  }
+
+  footer{
+    text-align:center;
+    padding:2vh;
+  }
+
+
+  @media only screen and (max-width:700px){
+    #contact{
+      .parallax-banner{
+        height:110vh !important;
+      }
+
+      .parallax-children{
+        &>div{
+          width:75%;
+
+          &:first-child{
+            margin-bottom:2vw;
+          }
+        }
+    }
+  }
+
+  #menu{
+    div > div{
+      column-count:1;
+    }
+
+    ul.list-group li{
+      width:100%;
+    }
+  }
+  }
+
+}

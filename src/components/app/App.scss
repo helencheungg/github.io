@@ -18,6 +18,10 @@
     -webkit-appearance: none;
   }
 
+  video::-webkit-media-controls {
+    display:none !important;
+  }
+
   .hero{
     position:relative;
     color:white;

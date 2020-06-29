@@ -83,8 +83,16 @@
     }
   }
 
-  .current-nav{
-    border-bottom:2px solid white;
+
+  .navbar-nav{
+    .current-nav{
+      border-bottom:2px solid white;
+      font-weight:bold;
+
+      a{
+        color:white;
+      }
+    }
   }
 
   #menu{
@@ -136,13 +144,13 @@
 
     .filling-empty-space-childs {
       display:block;
-      height:0; /*Important! for the divs to collapse should they fall in a new row*/
+      height:0;
     }
   }
 
   #about{
     position:Relative;
-    min-height:40vh;
+    //min-height:40vh;
     padding:8vh;
 
     p{
@@ -192,6 +200,36 @@
 
 
   @media only screen and (max-width:700px){
+    .hero{
+       .hero-block{
+         h1{
+           font-size:3em;
+         }
+
+         p{
+           font-size:1.25em;
+         }
+       }
+    }
+
+    #about{
+      padding:4vh 0;
+
+      p{
+        font-size:1.25em;
+      }
+    }
+
+    .navbar{
+      .nav-link:nth-child(2){
+        display:none;
+      }
+    }
+
+    #menuSection>div>div>div, #deliveroo{
+      padding:4vh;
+    }
+
     #contact{
       .parallax-banner{
         height:110vh !important;
@@ -213,10 +251,17 @@
       column-count:1;
     }
 
-    ul.list-group li{
+    ul{
+      padding:4vh !important;
+
+    }
+
+    ul.list-group{
+      li{
       width:100%;
     }
   }
   }
+}
 
 }

@@ -1,0 +1,29 @@
+{
+  "files": {
+    "main.css": "/welcomeinn/static/css/main.f7d8536f.chunk.css",
+    "main.js": "/welcomeinn/static/js/main.9c0fd336.chunk.js",
+    "main.js.map": "/welcomeinn/static/js/main.9c0fd336.chunk.js.map",
+    "runtime-main.js": "/welcomeinn/static/js/runtime-main.b124e0d7.js",
+    "runtime-main.js.map": "/welcomeinn/static/js/runtime-main.b124e0d7.js.map",
+    "static/css/2.829c9cb5.chunk.css": "/welcomeinn/static/css/2.829c9cb5.chunk.css",
+    "static/js/2.7bc952b6.chunk.js": "/welcomeinn/static/js/2.7bc952b6.chunk.js",
+    "static/js/2.7bc952b6.chunk.js.map": "/welcomeinn/static/js/2.7bc952b6.chunk.js.map",
+    "index.html": "/welcomeinn/index.html",
+    "precache-manifest.5bbaecc6b82a3f4151c61ca6112edcbe.js": "/welcomeinn/precache-manifest.5bbaecc6b82a3f4151c61ca6112edcbe.js",
+    "service-worker.js": "/welcomeinn/service-worker.js",
+    "static/css/2.829c9cb5.chunk.css.map": "/welcomeinn/static/css/2.829c9cb5.chunk.css.map",
+    "static/css/main.f7d8536f.chunk.css.map": "/welcomeinn/static/css/main.f7d8536f.chunk.css.map",
+    "static/js/2.7bc952b6.chunk.js.LICENSE.txt": "/welcomeinn/static/js/2.7bc952b6.chunk.js.LICENSE.txt",
+    "static/media/01.mp4": "/welcomeinn/static/media/01.722a77bb.mp4",
+    "static/media/03.JPEG": "/welcomeinn/static/media/03.bb13d93b.JPEG",
+    "static/media/App.scss": "/welcomeinn/static/media/04.ffcf2afe.JPEG",
+    "static/media/05.jpeg": "/welcomeinn/static/media/05.eccafc19.jpeg"
+  },
+  "entrypoints": [
+    "static/js/runtime-main.b124e0d7.js",
+    "static/css/2.829c9cb5.chunk.css",
+    "static/js/2.7bc952b6.chunk.js",
+    "static/css/main.f7d8536f.chunk.css",
+    "static/js/main.9c0fd336.chunk.js"
+  ]
+}

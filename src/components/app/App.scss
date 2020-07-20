@@ -20,6 +20,15 @@
 
   video::-webkit-media-controls {
     display:none !important;
+    opacity: 0;
+  }
+
+  video{
+    pointer-events:none;
+  }
+
+  .custom-video-controls {
+    z-index: 2147483647;
   }
 
   .hero{
@@ -217,9 +226,17 @@
     padding:2vh;
   }
 
-
+  // mobie
   @media only screen and (max-width:700px){
     .hero{
+      background-image:url("../../style/images/mobile.png");
+      background-position:center;
+      background-size:auto 100%;
+
+      .hero-video{
+        display:none;
+      }
+
        .hero-block{
          h1{
            font-size:3em;
